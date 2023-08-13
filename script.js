@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // ... outros campos da ficha de personagem
         };
         
-        // Salvar dados no Firebase
+        // Salvar dados no Cloud Firestore
         db.collection('characters').add(formData)
             .then(() => {
                 successMessage.style.display = 'block';
